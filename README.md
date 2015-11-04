@@ -24,6 +24,10 @@ The following **additional** features are implemented:
 
 * [x] Added a splash screen
 * [x] Indicated to-do item status using an icon
+* [x] Added activity transition animations
+* [x] Added an view screen with a delete button
+* [x] Added tool-bar buttons for the actions
+* [x] Added card-like UX for the list
 
 Walkthrough of all user stories:
 
