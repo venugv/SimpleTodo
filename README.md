@@ -16,3 +16,9 @@ Populate Edit Form - Now when the user clicks an item, it should bring up the Ed
 Send Back Result on Save - We need to hook up the edit form to send the result back to the initial activity after the "Save" button is clicked. Hook up a click handler on the "Save" button on the edit form and send back the todo item data to the list activity. Hint: Be sure to review each step of this section and call startActivityForResult initially to launch form and then later finish to return the result to the original activity.
 
 Update Todo Item - In the original todolist activity, handle the submitted form's result from the edit form by inserting the updated todo text for the item at the correct position in the array and "notify" the adapter such that the todo list properly reflects the change. Hint: Make sure to persist the updated text back to the file with writeItems.
+
+Walkthrough of all user stories:
+
+![Video Walkthrough](anim_rotten_tomatoes.gif)
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
