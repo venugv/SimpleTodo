@@ -19,6 +19,6 @@ Update Todo Item - In the original todolist activity, handle the submitted form'
 
 Walkthrough of all user stories:
 
-![Video Walkthrough](anim_rotten_tomatoes.gif)
+![Video Walkthrough](anim_todolist.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
