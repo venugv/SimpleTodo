@@ -3,19 +3,27 @@ A sample TodoList project for CodePath
 
 This is an Android demo application for displaying the latest box office movies using the [RottenTomatoes API](http://www.rottentomatoes.com/). See the [RottenTomatoes Networking Tutorial](http://guides.thecodepath.com/android/RottenTomatoes-Networking-Tutorial) on our cliffnotes for a step-by-step tutorial.
 
-User Stories Completed
+## User Stories
 
-Generate Second Screen - Generate a new UI screen (activity) that we will use for the edit screen. Let's generate a second activity to be used as an edit form for an item. Generate the second activity by selecting File => New => Activity => Blank Activity and go through the wizard to generate the blank activity. Give the activity a descriptive name i.e EditItemActivity
+The following **required** functionality is completed:
 
-Layout Edit Form - Let's setup the view for the EditItemActivity by going to res/layout/activity_edit_item.xml. Here, using the graphical editor, we need to add a multi-line text field for the item body and a save button to submit the updated text value.
+* [x] User can **successfully add and remove items** from the todo list
+* [x] User can **tap a todo item in the list and bring up an edit screen for the todo item** and then have any changes to the text reflected in the todo list.
+* [x] User can **persist todo items** and retrieve them properly on app restart
 
-Support Edit Action - Within the main activity, setup a click listener such that when I click (rather than long-click) on any item, I am taken to the Edit form screen for that item. In the click listener for the items, you need to bring up the edit form activity using an "Intent" as explained in the CodePath cliffnotes. To properly load the form data, you should pass along the text and position of that item to the second activity using "extras" as explained in the guide.
+The following **optional** features are implemented:
 
-Populate Edit Form - Now when the user clicks an item, it should bring up the Edit form activity and the item body should be passed along to that activity within the intent. Pull out the todo item's body from the extras as explained in the CodePath cliffnotes and set the form text field to contain the item's initial value. Be sure the user's cursor in the text field is at the end of the current text value and is in focus by default.
+* [x] Persist the todo items [into SQLite](http://guides.codepath.com/android/Persisting-Data-to-the-Device#sqlite) instead of a text file
+* [x] Improve style of the todo items in the list [using a custom adapter](http://guides.codepath.com/android/Using-an-ArrayAdapter-with-ListView)
+* [x] Add support for completion due dates for todo items (and display within listview item)
+* [ ] Use a [DialogFragment](http://guides.codepath.com/android/Using-DialogFragment) instead of new Activity for editing items
+* [x] Add support for selecting the priority of each todo item (and display in listview item)
+* [x] Tweak the style improving the UI / UX, play with colors, images or backgrounds
 
-Send Back Result on Save - We need to hook up the edit form to send the result back to the initial activity after the "Save" button is clicked. Hook up a click handler on the "Save" button on the edit form and send back the todo item data to the list activity. Hint: Be sure to review each step of this section and call startActivityForResult initially to launch form and then later finish to return the result to the original activity.
+The following **additional** features are implemented:
 
-Update Todo Item - In the original todolist activity, handle the submitted form's result from the edit form by inserting the updated todo text for the item at the correct position in the array and "notify" the adapter such that the todo list properly reflects the change. Hint: Make sure to persist the updated text back to the file with writeItems.
+* [x] Added a splash screen
+* [x] Indicated to-do item status using an icon
 
 Walkthrough of all user stories:
 
